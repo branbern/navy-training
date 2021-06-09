@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Alert from './Components/Alert'
-import './flashCard.scss';
+import './FlashCard.scss';
 
 const FlashCard = ({data, onClick}) => {
 
@@ -14,15 +14,14 @@ const FlashCard = ({data, onClick}) => {
         return alerts
     }
 
-    function createQuestions() {
-        let questions = []
-        console.log(data)
+    function createTopics() {
+        let topics = []
         if (data.red) {
             data.red.notes.map((question, i) => {
-                questions.push(<li key={i}>{question}</li>)
+                topics.push(<li key={i}>{question}</li>)
             })
         }
-        return questions
+        return topics
     }
 
     function createImages() {
@@ -42,18 +41,16 @@ const FlashCard = ({data, onClick}) => {
                 <p>{data.green}</p>
             </div>
             <div>
-                <div className='questions'>
-                    {createQuestions()}
+                <div className='topics'>
+                    {createTopics()}
                 </div>
                 <div className="images">
                     {createImages()}
                 </div>
             </div>
-           
             <ul className='alert-wrapper'>
                 {createAlerts()}
             </ul>
-           
         </div>
     )
 }

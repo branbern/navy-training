@@ -15,7 +15,7 @@ const Title = ({data}) => {
                 }}
                 >
                 <h1>{data.title}</h1>
-                </Link>
+            </Link>
         </div>
     )
 }

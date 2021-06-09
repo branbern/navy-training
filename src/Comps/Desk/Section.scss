@@ -1,11 +1,43 @@
 .section {
-    background: black;
+    background: #F6F6F6;
     height: 100vh;
-    padding: 40px;
     display: flex;
-    flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    
+    flex-direction: column;
+
+    .section-nav {
+        list-style: none;
+        background: #233041;
+        width: 100%;
+        color: white;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 50px;
+
+        a {
+            text-decoration: none;
+            color: white
+        }
+
+        a:hover {
+            color: #FFDC34;
+        }
+
+        .back {
+            margin: 0px;
+            display: flex;
+            justify-content: flex-start;
+            cursor: pointer;
+            align-items: center;
+        }
+
+        i {
+            font-size: calc(1 * 1rem);
+            padding: 0 1rem;
+        }
+    }
 }

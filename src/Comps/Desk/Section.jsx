@@ -9,7 +9,7 @@ const Section = () => {
     const location = useLocation()
     const { data } = location.state
 
-    const arrayCopy = [...data.questions]
+    const arrayCopy = [...data.topics]
     const [shuffledData, setShuffledData] = useState(shuffle(arrayCopy));
     const [active, setActive] = useState(shuffledData[0]);
 
@@ -35,7 +35,7 @@ const Section = () => {
       
           // And swap it with the current element.
           [array[currentIndex], array[randomIndex]] = [
-            array[randomIndex], array[currentIndex]];
+          array[randomIndex], array[currentIndex]];
         }
       
         return array;
@@ -43,6 +43,13 @@ const Section = () => {
 
     return (
         <div className='section'>
+            <div className='section-nav'>
+                <Link to={{
+                        pathname: "/freshenUp",
+                }}>
+                    <p className="back"><i class="fas fa-chevron-left"></i> {data.title}</p>
+                </Link>
+            </div>
             <FlashCard data={active} onClick={clicked}/>
         </div>
     )

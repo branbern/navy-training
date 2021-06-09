@@ -1,5 +1,5 @@
 .flash-card {
-    height: auto;
+    height: 800px;
     width: 1400px;
     border-radius: 3px;
     background: white;
@@ -9,6 +9,7 @@
     align-content: center;
     justify-content: flex-start;
     align-items: center;
+    border: 2px solid #ECECEC;
 
     .flash-card-content {
         display: flex;
