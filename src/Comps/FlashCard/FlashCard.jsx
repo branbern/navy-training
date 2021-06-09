@@ -36,21 +36,31 @@ const FlashCard = ({data, onClick}) => {
 
     return (
         <div className='flash-card'>
-            <div onClick={onClick} className='flash-card-content'>
-                <h2>{data.yellow}</h2> 
-                <p>{data.green}</p>
+            <div className='back' onClick={onClick}>
+                <i class="fas fa-chevron-left"></i>
             </div>
-            <div>
-                <div className='topics'>
-                    {createTopics()}
+            <div className='flash-card-content-wrapper'>
+                <div className='flash-card-content'>
+                    <h2>{data.yellow}</h2> 
+                    <p>{data.green}</p>
                 </div>
-                <div className="images">
-                    {createImages()}
+                <div>
+                    <div className='topics'>
+                        {createTopics()}
+                    </div>
+                    <div className="images">
+                        {createImages()}
+                    </div>
                 </div>
+                <ul className='alert-wrapper'>
+                    {createAlerts()}
+                </ul>
             </div>
-            <ul className='alert-wrapper'>
-                {createAlerts()}
-            </ul>
+           
+            <div className='next' onClick={onClick}>
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            
         </div>
     )
 }

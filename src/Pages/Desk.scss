@@ -1,13 +1,12 @@
-.section {
+.desk {
     background: #F6F6F6;
-    height: 100vh;
     display: flex;
     align-content: center;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
 
-    .section-nav {
+    .desk-nav {
         list-style: none;
         background: #233041;
         width: 100%;
@@ -40,4 +39,14 @@
             padding: 0 1rem;
         }
     }
+
+    .desk-content {
+        margin: 0px !important;
+        .control-board {
+            min-height: 150px;
+            display: flex;
+        }
+    }
+
+    
 }

@@ -1,9 +1,9 @@
 import React, { useState }from 'react';
 import { Link, useLocation } from "react-router-dom";
-import FlashCard from '../FlashCard/FlashCard'
-import './Section.scss';
+import FlashCard from '../Comps/FlashCard/FlashCard'
+import './Desk.scss';
 
-const Section = () => {
+const Desk = () => {
 
 
     const location = useLocation()
@@ -42,18 +42,22 @@ const Section = () => {
     }
 
     return (
-        <div className='section'>
-            <div className='section-nav'>
+        <div className='page desk'>
+            <div className='desk-nav'>
                 <Link to={{
-                        pathname: "/freshenUp",
-                }}>
-                    <p className="back"><i class="fas fa-chevron-left"></i> {data.title}</p>
+                        pathname: "/freshenUp",}}>
+                        <p className="back"><i class="fas fa-chevron-left"></i> {data.title}</p>
                 </Link>
             </div>
-            <FlashCard data={active} onClick={clicked}/>
+            <div className='content desk-content'>
+                <div className='control-board'>
+                    
+                </div>
+                <FlashCard data={active} onClick={clicked}/>
+            </div>
         </div>
     )
 }
 
 
-export default Section;
+export default Desk;
