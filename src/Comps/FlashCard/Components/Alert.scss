@@ -1,0 +1,36 @@
+.alert {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-bottom: 0px;
+
+
+    p {
+        width: 80%;
+        margin: auto;
+    }
+
+}
+
+.hide {
+    height: 60px;
+    overflow: hidden;
+}
+.show {
+    height: 150px;
+}
+
+.alert-note {
+    background: lightblue;
+    color: black;
+}
+.alert-caution {
+    background: lightyellow;
+    color: black;
+}
+.alert-warning {
+    background: lightcoral;
+    color: black;
+}
