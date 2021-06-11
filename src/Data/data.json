@@ -1,12 +1,12 @@
 
 
 {
-    "sections": [
+    "sections": {
+        "items" : [
         {
-            "title": "SHORING",
-            "neatTitle": "Shoring",
+            "title": "Shoring",
             "sectionNumber": 43,
-            "infos": [
+            "items": [
                 {
                     "title": "Shoring Introduction",
                     "topics": [
@@ -581,37 +581,39 @@
             "title": "________",
             "neatTitle": "---------",
             "sectionNumber": 1,
-            "infos": []
+            "items": []
         },
         {
             "title": "________",
             "neatTitle": "---------",
             "sectionNumber": 2,
-            "infos": []
+            "items": []
         },
         {
             "title": "________",
             "neatTitle": "---------",
             "sectionNumber": 3,
-            "infos": []
+            "items": []
         },
         {
             "title": "________",
             "neatTitle": "---------",
             "sectionNumber": 4,
-            "infos": []
+            "items": []
         },
         {
             "title": "________",
             "neatTitle": "---------",
             "sectionNumber": 5,
-            "infos": []
+            "items": []
         },
         {
             "title": "________",
             "neatTitle": "---------",
             "sectionNumber": 6,
-            "infos": []
+            "items": []
         }
-    ]
+    ],
+    "title": "Sections"
+    }
 }
