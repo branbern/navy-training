@@ -34,17 +34,34 @@ const FlashCard = ({data, onClick}) => {
         return images
     }
 
+
+    function filterData() {
+        let dataList = []
+
+        let thing = data.green.replace(/\n/g, '').split(/(?<=(\.\s))/g)
+        let result = thing.filter(function(x) {
+            return x !== '. ';
+        });
+       
+        result.map((e) => {
+            dataList.push(<p>{e}</p>)
+        })
+
+        return  dataList
+    }
+
+    
+  
     return (
         <div className='flash-card'>
-            <div className='back' onClick={onClick}>
-                <i class="fas fa-chevron-left"></i>
-            </div>
+  
             <div className='flash-card-content-wrapper'>
                 <div className='flash-card-content'>
+                    <i className="fas fa-chevron-right next" onClick={onClick}></i>
                     <h2>{data.yellow}</h2> 
-                    <p>{data.green}</p>
+                    {filterData()}
                 </div>
-                <div>
+                <div className='topics-wrapper'>
                     <div className='topics'>
                         {createTopics()}
                     </div>
@@ -56,11 +73,6 @@ const FlashCard = ({data, onClick}) => {
                     {createAlerts()}
                 </ul>
             </div>
-           
-            <div className='next' onClick={onClick}>
-                <i class="fas fa-chevron-right"></i>
-            </div>
-            
         </div>
     )
 }

@@ -9,8 +9,11 @@
 
     .back, .next {
         flex-grow: 1;
-        text-align: center;
-        font-size: calc(1*2rem);
+        text-align: right;
+        font-size: calc(1*1rem);
+        padding: 20px;
+        padding-bottom: 0px;
+        opacity: .5;
 
         i {
             cursor: pointer;
@@ -33,23 +36,22 @@
         border: 2px solid #ECECEC;
         width: 90%;
         .flash-card-content {
-            width: 60%;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
             align-content: center;
             justify-content: flex-start;
-            align-items: center;
     
     
             h2, p, .alert {
                 padding:  10px 20px;
-        
             }
         
             h2 {
                 font-size: calc(1.2 * 2rem);
                 padding: 20px;
+                text-align: center;
+
             }
         
             .flash-card-content {
@@ -58,11 +60,23 @@
                     margin: auto;
                 }
             }
+
+            .topics-wrapper {
+                width: 80%;
+            }
+
+            .images {
+                width: 100%;
+            }
+
         }
         .topics {
-            padding: 40px;
             width: 80%;
             margin: auto;
+
+            li {
+                margin-bottom: 10px;
+            }
         }
     }
     

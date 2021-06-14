@@ -8,6 +8,7 @@ const FreshenUp = ({data}) => {
     const location = useLocation()
     const listData = data ? data : location.state.data
     const showBack = data ? false : true
+    
     return (
         <div className='page'>
             <Navigation />

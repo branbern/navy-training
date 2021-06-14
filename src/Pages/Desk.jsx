@@ -50,9 +50,6 @@ const Desk = () => {
                 </Link>
             </div>
             <div className='content desk-content'>
-                <div className='control-board'>
-                    
-                </div>
                 <FlashCard data={active} onClick={clicked}/>
             </div>
         </div>
