@@ -1,3 +1,32 @@
+$small: 400px;
+$medium: 900px;
+
+
+.flash-card {
+    @media screen and (max-width: $small) {
+        .flash-card-content {
+            width:100%;
+        }
+        .topics-wrapper {
+            width: 80%;
+        }
+        h2 {
+            font-size: calc(1.2 * 1rem);
+        }
+        p {
+            font-size: calc(1* 1rem);
+        }
+    }
+    @media screen and (min-width: $medium) {
+        .flash-card-content {
+            width: 60%;
+        }
+        .topics-wrapper {
+            width: 60%;
+        }
+    }
+}
+
 .flash-card {
     height:auto;
     display: flex;
@@ -48,10 +77,8 @@
             }
         
             h2 {
-                font-size: calc(1.2 * 2rem);
                 padding: 20px;
                 text-align: center;
-
             }
         
             .flash-card-content {
@@ -71,7 +98,14 @@
 
         }
         .topics {
-            width: 80%;
+            @media screen and (max-width: $small) {
+                width: 100%;
+            }
+            @media screen and (min-width: $medium) {
+                width: 80%;
+            }
+        }
+        .topics {
             margin: auto;
 
             li {
@@ -96,3 +130,8 @@
         border-right: 0px;
     }
 }
+
+
+
+
+

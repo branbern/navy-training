@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Title from './Title';
 import './List.scss'
+
 const List = ({data}) => {
-    console.log(data, 'data')
-
-    const items = data.items
+    console.log(data, 'yo')
+    const items = data.items ? data.items : data.sections
     const title = data.title
-
 
     const makeListFromData = () => {
         let listedItems = []

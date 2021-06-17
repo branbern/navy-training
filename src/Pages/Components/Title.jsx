@@ -4,13 +4,12 @@ import { Link, useLocation } from "react-router-dom";
 import './Title.scss';
 
 const Title = ({data}) => {
-    console.log(data)
     return (
         <div className='title'>
-            {data.items ? 
+            {data.sections ? 
             <Link
             to={{
-                pathname: `/freshenup/:${data.title}`,
+                pathname: `/freshenup/${data.title}`,
                 state: {
                 id: data.title,
                 data: data,

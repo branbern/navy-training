@@ -4,8 +4,8 @@ import Home from './Pages/Home'
 import FreshenUp from './Pages/FreshenUp'
 import Quizes from './Pages/Quizes'
 import Desk from './Pages/Desk'
-import data from './Data/data.json'
-
+import data from './Data/Data'
+  
 import './App.scss'
 
 
@@ -18,7 +18,7 @@ const App = () => {
       <Switch>
         <Route path="/" exact render={() => (<Home />)}/>
         <Route path="/quizes" exact render={() => (<Quizes />)}/>
-        <Route path="/freshenup" exact render={() => (<FreshenUp data={data.sections}/>)}/>
+        <Route path="/freshenup" exact render={() => (<FreshenUp data={data.chapters}/>)}/>
         <Route path="/freshenup/:id" render={() => (<FreshenUp />)}/>
         <Route path="/:section">
           <Desk />

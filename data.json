@@ -53,11 +53,9 @@
                     "topics": [
                     {
                         "yellow": "Essential Elements",
-                        "green": "The aim should be to shore to the nearest strong point. If the nearest structure is not strong enough, the shoring must be continued back, through other compartments if necessary, to end at members of sufficient strength. The shoring assembly must always be kept under observation because if it becomes strained it will, itself, require support. Chart 4, Flowchart on Shoring, Appendix D, provides a decision path to aid in making shoring decisions.",
-                        "red": {
-                            "notes" : ["Strong and rigid anchor points for the shores", "A reasonably complete network of reinforcement", "Distribution of the load over as large an area as possible with a good layout of strongbacks or a shole", "Observation of length limitations - 30 times minimum thickness", "Use of shores for support only - not to restore structure to original shape."],
+                        "green": "The essential elements of effective shoring are as follows:",
+                        "notes": ["Strong and rigid anchor points for the shores", "A reasonably complete network of reinforcement", "Distribution of the load over as large an area as possible with a good layout of strongbacks or a shole", "Observation of length limitations - 30 times minimum thickness", "Use of shores for support only - not to restore structure to original shape."],
                             "additionalText": [""]
-                        }
                     },
                     {
                         "yellow": "Decision AIDS",

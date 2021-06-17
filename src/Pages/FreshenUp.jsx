@@ -5,10 +5,11 @@ import { Link, useLocation } from "react-router-dom";
 
 import './FreshenUp.scss'
 const FreshenUp = ({data}) => {
+
     const location = useLocation()
     const listData = data ? data : location.state.data
     const showBack = data ? false : true
-    
+    console.log(listData)
     return (
         <div className='page'>
             <Navigation />

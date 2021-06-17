@@ -8,8 +8,7 @@ const Desk = () => {
 
     const location = useLocation()
     const { data } = location.state
-
-    const arrayCopy = [...data.topics]
+    const arrayCopy = [...data.sections]
     const [shuffledData, setShuffledData] = useState(shuffle(arrayCopy));
     const [active, setActive] = useState(shuffledData[0]);
 
