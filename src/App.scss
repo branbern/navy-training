@@ -1,3 +1,46 @@
-.page {
+$small: 400px;
+$medium: 900px;
+@media screen and (max-width: $small) {
+    .back-nav {
+        margin-bottom: 20px;
+    }
+  }
+  @media screen and (min-width: $medium) {
+    .back-nav {
+        margin-bottom: 40px;
+    }
+  }
 
+
+  .back-nav {
+    list-style: none;
+    background: #233041;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50px;
+
+    a {
+        text-decoration: none;
+        color: white
+    }
+
+    a:hover {
+        color: #FFDC34;
+    }
+
+    .back {
+        margin: 0px;
+        display: flex;
+        justify-content: flex-start;
+        cursor: pointer;
+        align-items: center;
+    }
+
+    i {
+        font-size: calc(1 * 1rem);
+        padding: 0 1rem;
+    }
 }

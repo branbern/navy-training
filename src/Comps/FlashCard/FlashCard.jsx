@@ -3,7 +3,7 @@ import Alert from './Components/Alert'
 import './FlashCard.scss';
 
 const FlashCard = ({data, onClick}) => {
-
+    
     return (
         <div className='flash-card'>
   
