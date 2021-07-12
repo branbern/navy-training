@@ -7,13 +7,52 @@
     align-items: center;
     flex-direction: column;
 
-    .desk-content {
-        margin: 0px !important;
-        .control-board {
-            min-height: 150px;
-            display: flex;
+    .desk-container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        width: 67%;
+        align-content: flex-start;
+
+        .desk-content {
+            margin: 0px !important;
+    
+            h2 {
+                margin-bottom: 40px;
+            }
+        }
+        .images {
+            border-left: 1px solid black;
+            margin-left: 40px;
         }
     }
 
     
+
+    .additional-knowledge-container {
+        .link {
+            width: 200px;
+            color: blue;
+        }
+        .additional-knowledge-popout {
+            display: inherit;
+            min-height: 100px;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 40px;
+
+            img {
+                height: 100px;
+                width: 100px;
+                position: relative;
+            }
+        }
+       
+    }
+
+    .hide {
+        display: none;
+        min-height: 0px; 
+        border: 0px solid black;
+    }
 }

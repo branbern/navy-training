@@ -188,12 +188,12 @@
                         },
                         {
                             "yellow": "Bulkhead Shoring Angles",
-                            "green": " Shores must form a considerable angle with the bulkhead they are supporting. Correct shoring angles are illustrated in Figure 079-43-2",
+                            "green": "Shores must form a considerable angle with the bulkhead they are supporting. Correct shoring angles are illustrated in Figure 079-43-2",
                             "images": ["images/Figure079-43-2.png"]
                         },
                         {
                             "yellow": "Example of Metal Shoring",
-                            "green": " In addition to the use of steel shores to plug holes in the side of the ship, steel shores also are used to support overhead decks or loads. Figure 079-43-5 illustrates a steel shore as described in paragraph 079-43.4",
+                            "green": "In addition to the use of steel shores to plug holes in the side of the ship, steel shores also are used to support overhead decks or loads. Figure 079-43-5 illustrates a steel shore as described in paragraph 079-43.4",
                             "images": ["images/Figure079-43-5.png"]
                         },
                         {
@@ -574,42 +574,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "title": "________",
-            "neatTitle": "---------",
-            "sectionNumber": 1,
-            "items": []
-        },
-        {
-            "title": "________",
-            "neatTitle": "---------",
-            "sectionNumber": 2,
-            "items": []
-        },
-        {
-            "title": "________",
-            "neatTitle": "---------",
-            "sectionNumber": 3,
-            "items": []
-        },
-        {
-            "title": "________",
-            "neatTitle": "---------",
-            "sectionNumber": 4,
-            "items": []
-        },
-        {
-            "title": "________",
-            "neatTitle": "---------",
-            "sectionNumber": 5,
-            "items": []
-        },
-        {
-            "title": "________",
-            "neatTitle": "---------",
-            "sectionNumber": 6,
-            "items": []
         }
     ],
     "title": "Sections"
