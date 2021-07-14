@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link, useLocation } from "react-router-dom";
 
 const FreshenUpId = () => {
@@ -6,7 +6,9 @@ const FreshenUpId = () => {
     const location = useLocation()
     const sectionData = location.state.data
 
+
     let listedSections = []
+    console.log(sectionData.questions)
     sectionData.sections.map((section) => {  
         listedSections.push(
           <div className='title'>
@@ -15,6 +17,7 @@ const FreshenUpId = () => {
                     pathname: `/section/`,
                     state: {
                         data: section,
+                        quizData: sectionData.questions,
                         back: {
                             pathname: `/freshenup/${sectionData.title}`,
                             data: sectionData,

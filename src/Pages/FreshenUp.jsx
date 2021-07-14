@@ -7,6 +7,7 @@ const FreshenUp = ({data}) => {
 
     const location = useLocation()
     const listData = data ? data : location.state.data
+
     let listedItems = []
     listData.items.map((item) => {  
         listedItems.push(

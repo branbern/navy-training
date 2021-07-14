@@ -5,10 +5,9 @@ import './Desk.scss';
 
 const Desk = () => {
     const location = useLocation()
-    const { data } = location.state
+    const { data, quizData } = location.state
     const [showAk, setShowAk] = useState(false);
 
-    console.log(data)
 
     const checkTexts = () => {
         console.log(data)
@@ -60,6 +59,24 @@ const Desk = () => {
         return returned
     }
 
+    const getQuizData = () => {
+        let returnedData = []
+        let type = ""
+        quizData[0].multipleChoice.map((question) => {
+            type="multipleChoice"
+            if(question.sectionID === data.sectionID) {
+                returnedData.push({'data': question, 'type': type})
+            }
+        })
+        quizData[0].trueOrFalse.map((question) => {
+            type="trueOrFalse"
+            if(question.sectionID === data.sectionID) {
+                returnedData.push({'data': question, 'type': type})
+            }
+        })
+        console.log(returnedData)
+        return returnedData
+    }
     return (
         <div className='page desk'>
 
@@ -92,6 +109,14 @@ const Desk = () => {
                             {checkImages()}
                         </div>
                     : null}
+                    <Link
+                    to={{
+                        pathname: "/quiz/:id",
+                        state: {
+                            data: getQuizData(),
+                        }}}>
+                        <p>Take the Quiz</p>
+                    </Link>
                 </div>
         </div>
     )

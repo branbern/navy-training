@@ -1,0 +1,16 @@
+.quiz {
+    background-color: #233041;
+    height: 100vh;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+
+    .fas {
+        color: black;
+    }
+}
