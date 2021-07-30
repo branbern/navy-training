@@ -12,38 +12,56 @@ const Data = {
                         {
                             sectionID: 2,
                             type: "True or False",
-                            text: ["This is an Objective of Shoring", "To reinforce straining bulkheads, doors and hatches against abnormal pressures."],
-                            answer: true
+                            text: ["This is an Objective of Shoring:", "To reinforce straining bulkheads, doors and hatches against abnormal pressures."],
+                            options: [
+                                {text: "True", correct: true},
+                                {text: "False", correct: false},
+                            ],
                         },
                         {
                             sectionID: 2,
                             type: "True or False",
-                            text: ["This is an Objective of Shoring", "To support strong and sturdy structures and fittings."],
-                            answer: false
+                            text: ["This is an Objective of Shoring:", "To support strong and sturdy structures and fittings."],
+                            options: [
+                                {text: "True", correct: false},
+                                {text: "False", correct: true},
+                            ],
                         },
                         {
                             sectionID: 4,
                             type: "True or False",
                             text: ["The simplest and strongest shoring structure is where the shore, in direct compression, is anchored against a solid structure and holds the strongback against the bulkhead"],
-                            answer: true
+                            options: [
+                                {text: "True", correct: true},
+                                {text: "False", correct: false},
+                            ],
                         },
                         {
                             sectionID: 4,
                             type: "True or False",
                             text: ["Shores will support far greater weight in direct compression than they will in a cross-axial direction."],
-                            answer: true
+                            options: [
+                                {text: "True", correct: true},
+                                {text: "False", correct: false},
+                            ],
                         },
                         {
                             sectionID: 4,
                             type: "True or False",
                             text: ["It makes no difference whether the shores are placed horizontally or vertically"],
-                            answer: true
+                            options: [
+                                {text: "True", correct: true},
+                                {text: "False", correct: false},
+                            ],
                         },
                           {
                             sectionID: 4,
                             type: "True or False",
                             text: ["When designing a shoring structure, it is important to have as many shores as possible under cross-axial stress and as few as possible under direct compression."],
-                            answer: false
+                            options: [
+                                {text: "True", correct: false},
+                                {text: "False", correct: true},
+                            ],
                         }
 
                     ],
@@ -197,13 +215,19 @@ const Data = {
                             sectionID: 1,
                             type: "True or False",
                             text: ["This is an essential element of effective Shoring", "Strong and smooth anchor points for the shores."],
-                            answer: false
+                            options: [
+                                {text: "True", correct: false},
+                                {text: "False", correct: true},
+                            ],
                         },
                         {
                             sectionID: 2,
                             type: "True or False",
                             text: ["The shoring assembly must always be kept under observation."],
-                            answer: true
+                            options: [
+                                {text: "True", correct: true},
+                                {text: "False", correct: true},
+                            ],
                         },
                     ],
                     multipleChoice: [
@@ -378,46 +402,7 @@ const Data = {
             {
                 title: "Wooden Shoring",
                 itemID: 3,
-                questions: [{
-                    trueOrFalse: [
-                        {
-                            sectionID: 1,
-                            type: "True or False",
-                            text: ["This is an essential element of effective Shoring", "Strong and smooth anchor points for the shores."],
-                            answer: false
-                        },
-                    ],
-                    trueOrFalse: [
-                        {
-                            sectionID: 2,
-                            type: "True or False",
-                            text: ["The shoring assembly must always be kept under observation."],
-                            answer: true
-                        },
-                    ],
-                    multipleChoice: [
-                        {
-                            sectionID: 1, 
-                            text: ["The essential elements of effective shoring are"], 
-                            options: [
-                                {text: "Strong and rigid anchor points for the shores", correct: true},
-                                {text: "A reasonably complete network of reinforcement", correct: true},
-                                {text: "Distribution of the load over as large an area as possible with a good layout of strongbacks or a shole", correct: true},
-                                {text: "Observation of length limitations - 30 times minimum thickness", correct: true},
-                                {text: "Use of shores for support only - not to restore structure to original shape", correct: true},
-                            ],
-                        },
-                        {
-                            sectionID: 2, 
-                            text: ["If the nearest structure is not strong enough"], 
-                            options: [
-                                {text: "The shoring must be continued back to end at members of sufficient strength.", correct: true},
-                                {text: "The shoring must be tied off with several wraps and bounds.", correct: false},
-                            ],
-                        },
-                       
-                    ],
-                }],
+                questions: [],
                 sections: [
                     {
                         sectionID: 1,
@@ -522,9 +507,7 @@ const Data = {
             {
                 title: "Metal Shoring",
                 itemID: 3,
-                questions: [{
-                 
-                }],
+                questions: [],
                 sections: [
                     {
                         sectionID: 1,
@@ -644,9 +627,8 @@ const Data = {
             {
                 title: "Other Shoring Equipment",
                 itemID: 4,
-                questions: [{
-                 
-                }],
+                questions: [],
+
                 sections: [
                     {
                         sectionID: 1,
@@ -754,9 +736,8 @@ const Data = {
             {
                 title: "Laying Out Shoring",
                 itemID: 5,
-                questions: [{
-                 
-                }],
+                questions: [],
+
                 sections: [
                     {
                         sectionID: 1,

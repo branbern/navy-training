@@ -1,16 +1,22 @@
 .quiz {
     background-color: #233041;
-    height: 100vh;
-    
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     align-items: center;
 
 
-    .fas {
+    .cards {
+        width: 60%;
+        margin-top: 100px;
+    }
+
+    .submit {
+        border: 0px;
+        background-color: white;
         color: black;
+        margin-bottom: 100px;
     }
 }

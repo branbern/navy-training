@@ -22,7 +22,7 @@ const App = () => {
         <Route path="/quizes" exact render={() => (<Quizes data={data}/>)}/>
         <Route path="/freshenup" exact render={() => (<FreshenUp data={data.chapters}/>)}/>
         <Route path="/freshenup/:id" render={() => (<FreshenUpId />)}/>
-        <Route path="/quiz/:id" render={() => (<Quiz />)}/>
+        <Route path="/quiz/:id" component={Quiz}/>
         <Route path="/:section">
           <Desk />
         </Route>

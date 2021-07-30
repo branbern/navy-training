@@ -9,18 +9,7 @@ const Desk = () => {
     const [showAk, setShowAk] = useState(false);
 
 
-    const checkTexts = () => {
-        console.log(data)
-        let texts = []
-        if (data.text.text)  {
-            data.text.text.map((e) => {
-                texts.push(<p>{e}</p>)
-            })
-        }
-        return texts
-    }
-
-    const checkImages = () => {
+   const checkImages = () => {
         let images = []
         if (data.images)  {
             data.images.map((e) => {
