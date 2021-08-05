@@ -1,19 +1,26 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
+import {Auth, API, graphqlOperation} from 'aws-amplify';
+import { withAuthenticator } from 'aws-amplify-react';
+// import * as queries from './graphql/queries'
+
 import Home from './Pages/Home'
 import FreshenUp from './Pages/FreshenUp'
 import Quizes from './Pages/Quizes'
 import Desk from './Pages/Desk'
 import data from './Data/Data'
 import Quiz from './Comps/Quiz/Quiz'
+import awsconfig from './aws-exports';
   
 import './App.scss'
+import '@aws-amplify/ui/dist/style.css';
+
 import FreshenUpId from './Pages/FreshenUpId';
 
 
+Auth.configure(awsconfig)
+
 const App = () => {
-
-
 
   return (
     <Router>
@@ -30,4 +37,4 @@ const App = () => {
     </Router>
   )}
 
-export default App;
+  export default withAuthenticator(App)

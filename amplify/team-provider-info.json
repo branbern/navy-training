@@ -1,0 +1,35 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-navytraining-dev-75057-authRole",
+      "UnauthRoleArn": "arn:aws:iam::087246383500:role/amplify-navytraining-dev-75057-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::087246383500:role/amplify-navytraining-dev-75057-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-navytraining-dev-75057-deployment",
+      "UnauthRoleName": "amplify-navytraining-dev-75057-unauthRole",
+      "StackName": "amplify-navytraining-dev-75057",
+      "StackId": "arn:aws:cloudformation:us-east-1:087246383500:stack/amplify-navytraining-dev-75057/6780fce0-f5e3-11eb-bcf8-0e688fb565d9",
+      "AmplifyAppId": "d2sql579qfaoaq"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2sql579qfaoaq",
+          "type": "manual"
+        }
+      },
+      "function": {
+        "navytraining469b6f35CustomMessage": {
+          "REDIRECTURL": "",
+          "EMAILSUBJECT": "",
+          "EMAILMESSAGE": "",
+          "deploymentBucketName": "amplify-navytraining-dev-75057-deployment",
+          "s3Key": "amplify-builds/navytraining469b6f35CustomMessage-533574383659594a346b-build.zip"
+        }
+      },
+      "auth": {
+        "navytraining469b6f35": {}
+      }
+    }
+  }
+}

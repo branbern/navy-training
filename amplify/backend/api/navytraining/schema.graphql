@@ -1,0 +1,40 @@
+type Main @model {
+  users: [User]
+  chapters: [Chapter]
+}
+
+type User {
+  id: ID!
+  name: String!
+}
+
+type Chapter {
+  title: String!
+  sectionNumber: Int!
+  items: [Item]
+}
+
+type Item {
+  itemID: ID!
+  title: String!
+  sections: [Section]
+}
+
+type Section {
+  sectionID: ID!
+  title: String!
+  text: [SectionObj]
+  images: [String]
+}
+
+type SectionObj {
+  text: [String]
+  followings: [String]
+  additionalKnowledge: [String]
+  notes: [Note]
+}
+
+type Note {
+  type: String!
+  text: [String]
+}
