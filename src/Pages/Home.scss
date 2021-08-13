@@ -1,46 +1,95 @@
-.home {
-    background: white;
-    color: rgb(1,32,44);
-
-
-    .forged-section {
-        height: 1000px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 100%;
-    }
-
-    .section {
-        width: 80%;
-        margin: auto;
-    }
-
-    .section2 {
-        height: 100%;
-        display: flex;
-
-        .welcome {
+$small: 400px; $medium: 900px;
+@media screen and (max-width: $small) {
+    .home {
+        background: white;
+        color: rgb(1,32,44);
+    
+        .forged-section {
+            height: 100vh;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+    
+        .section {
+            width: 80%;
             margin: auto;
-            width: 800px;
+        }
+    
+        .section2 {
+            height: 100%;
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            background-color: rgba(35,48,65,.8);
-            padding: 20px;
-            color: white;
-
-            h2 {
-                font-size: 3rem;
-                font-weight: 600;
-            }
-            p {
-                font-size: 24px;
-                line-height: 40px;
-                font-weight: 300;
-                max-width: 800px;
+    
+            .welcome {
+                margin: auto;
+                width: 90%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                background-color: rgba(35,48,65,.8);
+                padding: 20px;
+                color: white;
+    
+                h2 {
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 16px;
+                    line-height: 40px;
+                    font-weight: 300;
+                    max-width: 800px;
+                }
             }
         }
     }
-
 }
+@media screen and (min-width: $medium) {
+    .home {
+        background: white;
+        color: rgb(1,32,44);
+    
+        .forged-section {
+            height: 1000px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+    
+        .section {
+            width: 80%;
+            margin: auto;
+        }
+    
+        .section2 {
+            height: 100%;
+            display: flex;
+    
+            .welcome {
+                margin: auto;
+                width: 800px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                background-color: rgba(35,48,65,.8);
+                padding: 20px;
+                color: white;
+    
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 40px;
+                    font-weight: 300;
+                    max-width: 800px;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,17 +1,3 @@
-$small: 400px;
-$medium: 900px;
-@media screen and (max-width: $small) {
-    .back-nav {
-        margin-bottom: 20px;
-    }
-  }
-  @media screen and (min-width: $medium) {
-    .back-nav {
-        margin-bottom: 40px;
-    }
-  }
-
-
 
 
   body {
