@@ -98,14 +98,14 @@ const Desk = () => {
                             {checkImages()}
                         </div>
                     : null}
-                    <Link
+                    {/* <Link
                     to={{
                         pathname: "/quiz/:id",
                         state: {
                             data: getQuizData(),
                         }}}>
                         <p>Take the Quiz</p>
-                    </Link>
+                    </Link> */}
                 </div>
         </div>
     )

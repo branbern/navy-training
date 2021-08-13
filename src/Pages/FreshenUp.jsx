@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from '../Pages/Nav/Navigation'
 import { Link, useLocation } from "react-router-dom";
+import { withAuthenticator } from 'aws-amplify-react';
 
 import './FreshenUp.scss'
 const FreshenUp = ({data}) => {
@@ -36,4 +37,4 @@ const FreshenUp = ({data}) => {
 
     
 
-export default FreshenUp;
+export default withAuthenticator(FreshenUp);

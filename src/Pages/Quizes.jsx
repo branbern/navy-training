@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link, useLocation } from "react-router-dom";
+import { withAuthenticator } from 'aws-amplify-react';
 
 import Navigation from '../Pages/Nav/Navigation'
 
@@ -11,8 +11,7 @@ const Quizes = ({data}) => {
   return (
     <div className='page'>
         <Navigation />
-        
     </div>
   )}
 
-export default Quizes;
+export default withAuthenticator(Quizes);

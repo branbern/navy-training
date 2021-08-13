@@ -12,7 +12,19 @@
         align-items: flex-start;
     }
 
-    h1 {
-        color: black;
+    .info {
+        h2 {
+            color: white;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 24px;
+            line-height: 40px;
+            font-weight: 300;
+            padding-bottom: 3.6rem;
+            max-width: 800px;
+        }
     }
 }
