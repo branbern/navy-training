@@ -30,9 +30,9 @@ const App = () => {
         <Route path="/freshenup/:id" render={() => (<FreshenUpId />)}/>
         <Route path="/signIn" component={SignIn}/>
         <Route path="/quiz/:id" component={Quiz}/>
-        {/* <Route path="/:section">
+        <Route path="/:section">
           <Desk />
-        </Route> */}
+        </Route>
       </Switch>
     </Router>
   )}

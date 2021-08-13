@@ -8,7 +8,6 @@ const FreshenUpId = () => {
 
 
     let listedSections = []
-    console.log(sectionData.questions)
     sectionData.sections.map((section) => {  
         listedSections.push(
           <div className='title'>
@@ -23,7 +22,7 @@ const FreshenUpId = () => {
                             data: sectionData,
                         }
                     },
-                }}><h1>{section.title}</h1> </Link>
+                }}><h3>{section.title}</h3> </Link>
           </div>
         )
     })
@@ -41,7 +40,10 @@ const FreshenUpId = () => {
                 </Link>
             </div>
             <div class='freshenup-content'>
+                <h2 className='header'>Key Topics:</h2>
+                <div className='wrapper'>
                 {listedSections}
+                </div>
             </div>
         </div>)
 }

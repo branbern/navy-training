@@ -22,6 +22,7 @@
 
         li {
             margin-left: 20px;
+            font-weight: 600;
         }
     }
     a:hover {           
@@ -43,5 +44,9 @@
     }
     .sign-out {
         cursor: pointer;
+    }
+
+    .brand {
+        font-weight: 600;
     }
 }

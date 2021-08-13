@@ -1,7 +1,7 @@
 
 const Data = {
-    chapters: {
-        title: "Shoring",
+    chapters: [
+       { title: "Shoring",
         sectionNumber: 43,
         items: [
             {
@@ -1421,8 +1421,13 @@ const Data = {
                 ]
             }
 
-        ]
-    }
+        ]},
+        {
+            title: "N/A",
+            sectionNumber: 0,
+            items: []
+        }
+    ]
 }
     
 export default Data;
