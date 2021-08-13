@@ -4,13 +4,17 @@ import './Home.scss';
 
 const Home = () => {
 
-    return (
-        <div className='page'>
+    return ( 
+        <div className='home' >
             <Navigation />
 
-            <div className='intro'>
-                <h2>Home</h2>
-                <p></p>
+            <div className='forged-section' style={{backgroundImage: 'url(images/navy1.jpg)'}}>
+                <div className='section' >
+                    <div className='welcome'>
+                        <h2>FORGED BY THE SEA</h2>
+                        <p>"The sea is a force to be reckoned with. People have been made by it, and broken by it. But in the Navy, we command it. The sea is our honor, courage and commitment, forging the greatest force on earth."</p>
+                    </div>
+                </div>
             </div>
         </div>
     )

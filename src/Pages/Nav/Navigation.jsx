@@ -37,18 +37,17 @@ const Navigation = () => {
 
     return (
         <div className='global-nav'>
-            <a className="brand" href="/">Home</a>
+            <div className='nav-wrap'>
+                <a className="brand" href="/">Home</a>
 
-            <ul className="navbar-nav">
-                <li className={active === '/quizes' ? 'active' : 'link', loggedIn ? 'show' : 'hide'} ><Link to="/quizes" onClick={() => setActive('/quizes')}>Quizes</Link></li>
-                <li className={active === '/freshenUp' ? 'active' : 'link', loggedIn ? 'show' : 'hide'} ><Link to="/freshenUp" onClick={() => setActive('/freshenUp')}>Freshen Up</Link></li>
-                <li className={loggedIn ? 'hide' : 'show'} ><Link to="/signIn">Sign In</Link></li>
-                <li className={loggedIn ? 'hide' : 'show'} ><Link to="/signIn">Sign Up</Link></li>
-                <li className={loggedIn ? 'show' : 'hide'} ><a onClick={() => signOut()}>Sign Out</a></li>
-            </ul>
-            <ul>
-                
-            </ul>
+                <ul className="navbar-nav">
+                    <li className={active === '/quizes' ? 'active' : 'link', loggedIn ? 'show' : 'hide'} ><Link to="/quizes" onClick={() => setActive('/quizes')}>Quizes</Link></li>
+                    <li className={active === '/freshenUp' ? 'active' : 'link', loggedIn ? 'show' : 'hide'} ><Link to="/freshenUp" onClick={() => setActive('/freshenUp')}>Freshen Up</Link></li>
+                    <li className={loggedIn ? 'hide' : 'show'} ><Link to="/signIn">Sign In</Link></li>
+                    <li className={loggedIn ? 'hide' : 'show'} ><Link to="/signIn">Sign Up</Link></li>
+                    <li className={loggedIn ? 'show sign-out' : 'hide'} ><a onClick={() => signOut()}>Sign Out</a></li>
+                </ul>
+            </div>
         </div>
     )}
 
