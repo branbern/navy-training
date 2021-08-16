@@ -1,4 +1,11 @@
-
+$small: 400px;
+$medium: 900px;
+@media screen and (max-width: $small) {
+    
+}
+@media screen and (min-width: $medium) {
+    
+}
 
   body {
     font-family: 'Space Grotesk', sans-serif;

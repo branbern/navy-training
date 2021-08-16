@@ -1,5 +1,58 @@
-$small: 400px;
-$medium: 900px;
+.global-nav {
+    background: #233041;
+    width: 100%;
+
+    .nav-wrap {
+        width: 90%;
+        margin: auto;
+        list-style: none;
+        padding: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        max-height: 50px;
+    }
+
+    .navbar-nav {
+        flex-grow: 1;
+        flex-direction: row;
+        align-content: center;
+        justify-content: flex-end;
+        align-items: center;
+
+        li {
+            margin-left: 20px;
+            font-weight: 600;
+        }
+    }
+    a:hover {           
+        color: #D2AA16;
+        text-decoration: none;
+    }
+
+    a {
+        color: white;
+    }
+
+    .active {
+        a {
+            color: #D2AA16;
+        }
+    }
+    .hide {
+        display: none;
+    }
+    .sign-out {
+        cursor: pointer;
+    }
+
+    .brand {
+        font-weight: 600;
+    }
+}
+
+
+$small: 800px;
 @media screen and (max-width: $small) {
     .global-nav {
         background: #233041;
@@ -54,60 +107,7 @@ $medium: 900px;
         }
     }
   }
-  @media screen and (min-width: $medium) {
-    .global-nav {
-        background: #233041;
-        width: 100%;
-    
-        .nav-wrap {
-            width: 90%;
-            margin: auto;
-            list-style: none;
-            padding: 20px;
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            max-height: 50px;
-        }
-    
-        .navbar-nav {
-            flex-grow: 1;
-            flex-direction: row;
-            align-content: center;
-            justify-content: flex-end;
-            align-items: center;
-    
-            li {
-                margin-left: 20px;
-                font-weight: 600;
-            }
-        }
-        a:hover {           
-            color: #D2AA16;
-            text-decoration: none;
-        }
-    
-        a {
-            color: white;
-        }
-    
-        .active {
-            a {
-                color: #D2AA16;
-            }
-        }
-        .hide {
-            display: none;
-        }
-        .sign-out {
-            cursor: pointer;
-        }
-    
-        .brand {
-            font-weight: 600;
-        }
-    }
-  }
+
 
 
 
